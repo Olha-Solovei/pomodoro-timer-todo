@@ -1,0 +1,185 @@
+:root {
+  --blue: #09AFA5;
+  --orange: #d6633cd3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+}
+
+main {
+  padding-top: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+}
+
+.settings {
+  text-align: left;
+  min-width: 300px;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  border: 0;
+  display: inline-block;
+  width: 100px;
+}
+
+button.timer-btn {
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 10px 20px 10px 28px;
+  font-size: 1.5rem;
+  line-height: 36px;
+}
+
+button.timer-btn svg {
+  width: 36px;
+  float: right;
+  margin-left: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+
+.todo-list {
+  margin-top: 20px;
+  margin-left: 50px;
+  max-width: 440px;
+  min-width: 300px;
+  border-radius: 10px;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.todo-list h1 {
+  line-height: 20px;
+  margin: 10px 0 20px 0;
+}
+
+.todo-btn {
+  max-width: 30px;
+  font-size: 20px;
+  background-color: #D6D6DB;
+  color: #30344B;
+  border: 0;
+  border-radius: 3px;
+}
+
+.todo-checkbox {
+  margin-left: 0;
+}
+
+form {
+  border: 1px solid #d6d6db58;
+  padding: 2px;
+  border-radius: 5px;
+  display: flex;
+}
+
+form input[type="text"] {
+  background: none;
+  padding: 5px;
+  border: 0;
+  display: block;
+  font-size: 16px;
+  width: 440px;
+  color: #e3e3e7;
+}
+
+div.task {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  align-items: center;
+  padding: 5px;
+  margin-top: 10px;
+  display: flex;
+  transition: opacity .3s linear;
+}
+
+div.task svg {
+  height: 18px;
+  margin-right: 4px;
+  padding-top: 2px;
+}
+
+div.task-name {
+  flex-grow: 1;
+  padding-left: 5px;
+}
+
+div.task.done {
+  opacity: 0.5;
+}
+
+div.task span {
+  position: relative;
+}
+
+div.task span:before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 1px;
+  background-color: #e3e3e7;
+  position: absolute;
+  top: 10px;
+  transition: width .2s linear;
+}
+
+div.task.done span:before {
+  width: 100%;
+}
+
+.checkbox svg {
+  fill: #09AFA5;
+
+  cursor: pointer;
+}
+
+.trash-btn {
+  width: 24px;
+  cursor: pointer;
+}
+
+.trash-btn svg {
+  fill: #09AFA5;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 16px;
+  color: #bbbbc0;
+  letter-spacing: 1px;
+}
+
+div.task input {
+  border: none;
+  width: 360px;
+  height: 30px;
+}
+
+.toggler {
+  margin: 10px 0px 0px 20px;
+}
